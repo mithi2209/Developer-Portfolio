@@ -119,6 +119,44 @@
         height: 100%;
         width: 100%;
     }
+/* About Me Section Styles */
+    .about-section-container{
+        margin: 130px auto;
+    }
+    .about-section-parent{
+        padding: 150px;
+        text-align: center;
+        border-radius: 10px;
+        background: #fff8f3FF;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    }
+    .section-title{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .section-des{
+        max-width: 800px;
+        color: #757575;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 30px auto 0 auto;
+    }
+    .about-info-parent{
+        display: flex;
+        padding-top: 80px ;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about-info-tittle{
+        color: #757575;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .about-info{
+        font-size: 20px;
+        color: #474747;
+        line-height: 1.5;
+    }
 
 /* Reponsive Styles for Small Screens */
     @media screen and (max-width:576px){
@@ -175,6 +213,30 @@
         .hero-right img{
             width: 100%;
         }
+        /* About Me Section */
+        .about-section-container{
+            margin: 60px 20px;
+        }
+        .about-section-parent{
+            padding: 50px;
+        }
+        .section-title{
+            font-size: 30px;
+        }
+        .section-des{
+            font-size: 14px;
+            margin: 20px auto 0 auto;
+        }
+        .about-info-parent{
+            flex-direction: column;
+            padding-top: 30px;
+            gap: 15px;
+        }
+        .about-info-tittle ,
+        .about-info{
+            font-size: 16px;
+        }
+        
     }
 /* Responsive Styles For Medium Screens */
     @media screen and (min-width:576px) and (max-width:992px) {
@@ -220,5 +282,17 @@
         }
         .hero-right img{
             width: 100%;
+        }
+        /* About Me Section */
+
+        .about-section-container{
+            margin: 70px 30px;
+        }
+        .about-section-parent{
+            padding: 100px;
+        }
+        .about-info-parent{
+            flex-wrap: wrap;
+            gap: 50px;
         }
     }
