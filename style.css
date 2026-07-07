@@ -130,11 +130,11 @@
         background: #fff8f3FF;
         box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
     }
-    .section-title{
+    .about-section-title{
         font-size: 35px;
         font-weight: 700;
     }
-    .section-des{
+    .about-section-des{
         max-width: 800px;
         color: #757575;
         font-size: 18px;
@@ -156,6 +156,54 @@
         font-size: 20px;
         color: #474747;
         line-height: 1.5;
+    }
+
+/* What I DO Section Styles */
+    .do-section-container{
+        margin: 130px auto;
+    }
+    .do-section-heading{
+        text-align: center;
+    }
+    .do-section-title{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .do-section-des{
+        max-width: 900px;
+        color: #757575;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 20px auto;
+    }
+    .card-container{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .box-1 , .box-2 , .box-3 , .box-4 {
+        padding: 50px;
+        border-radius: 5px;
+        background: #ffffffFF;
+        box-shadow: 0px 6px 50px 0px #0000000F;
+    }
+    .box-2-img{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .box-1 h4  , .box-2 h4 , .box-3 h4 , .box-4 h4{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: 30px;
+    }
+    .box-1 p , .box-2 p , .box-3 p , .box-4 p{
+        color: #757575;
+        max-width: 200px;
+        line-height: 1.75;
+        margin-top: 23px;
     }
 
 /* Reponsive Styles for Small Screens */
@@ -220,10 +268,11 @@
         .about-section-parent{
             padding: 50px;
         }
-        .section-title{
+        .about-section-title ,
+        .do-section-title{
             font-size: 30px;
         }
-        .section-des{
+        .about-section-des{
             font-size: 14px;
             margin: 20px auto 0 auto;
         }
@@ -236,6 +285,20 @@
         .about-info{
             font-size: 16px;
         }
+        /* What I DO Section  */
+        .do-section-container{
+            margin: 70px auto;
+        }
+        
+        .do-section-des{
+            font-size: 14px;
+            margin-top: 30px;
+        }
+        .card-container{
+            gap: 30px;
+            flex-direction: column;
+        }
+
         
     }
 /* Responsive Styles For Medium Screens */
@@ -295,4 +358,5 @@
             flex-wrap: wrap;
             gap: 50px;
         }
+        /* What I DO Section  */
     }
