@@ -9,33 +9,47 @@
 
 /* Shared Styles */
 
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
-}
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
 
-.shared-button{
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    font-weight: 600;
-    padding: 12px 20px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: #fd6e0aFF;
-}
-.shared-button:hover{
-    background-color: rgb(158, 69, 6);
-}
+    .shared-button{
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: 600;
+        padding: 12px 20px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #fd6e0aFF;
+    }
+    .shared-button:hover{
+        background-color: rgb(158, 69, 6);
+    }
+
+    .contact-btn{
+        color: #fd6e0a;
+        background-color: white;
+        border: 1px solid  #fd6e0aFF;
+    }
+    .contact-btn:hover{
+        color: white;
+        background-color: #fd6e0a;
+    }
 
 /* Header Section Styles */
     header{
         background-color: #fff8f3FF;
+        background-image: url(./images/developer.png) , url(./images/header_bg.png);
         background-repeat: no-repeat;
         background-position: top left , bottom right;
         background-position-y: center , bottom;
-        background-image: url("./images/developer.png") ,url("./images/header_bg.png");
     }
 /* Navbar Styles */
     nav{
@@ -69,20 +83,64 @@
         text-decoration: none;
     }
 
+/* Hero Section Styles */
+    .hero-section-parent{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 120px 0 250px;
+    }
+    .hero-left{
+        text-align: left;
+    }
+    .hero-greeting{
+        color: #474747;
+        font-size: 45px;
+        font-weight: 600;
+    }
+    .hero-tittle{
+        font-size: 85px;
+        font-weight: 700;
+    }
+    .hero-des{
+        width: 585px;
+        color: #757575;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    .hero-button{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+   
+    .hero-right img{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
 /* Reponsive Styles for Small Screens */
     @media screen and (max-width:576px){
         /* shared styles */
         .shared-button{
-            padding:9px 10px;
+            padding:10px 10px;
             font-size: 18px;
         }
+        /* header */
+        header{
+            background-image: url(./images/header_bg.png);
+            background-repeat: no-repeat;
+            background-position: bottom center;
+        }
+        /* Navbar */
         nav{
             padding: 20px 0;
             flex-direction: column;
             
         }
         .nav-logo{
-            font-size: 35px;
+            font-size: 38px;
         }
         nav ul{
             margin-top: 16px;
@@ -90,19 +148,77 @@
         nav ul li a{
             font-size: 16px;
         }
+        /* hero section */
+        .hero-section-parent{
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            margin:0px;
+        
+        }
+        .hero-left{
+            padding-top: 20px;
+            text-align: center;
+
+        }
+        .hero-greeting{
+            font-size: 30px;
+        }
+        .hero-tittle{
+            font-size: 40px;
+        }
+        .hero-des{
+            width: 280px;
+            font-size: 16px;
+            margin: 15px 0;
+        }
+        .hero-right img{
+            width: 100%;
+        }
     }
 /* Responsive Styles For Medium Screens */
     @media screen and (min-width:576px) and (max-width:992px) {
+         /* header */
+        header{
+            background-image: url(./images/header_bg.png);
+            background-repeat: no-repeat;
+            background-position: bottom center;
+        }
         nav{
             padding: 15px 30px;
-        }
-        .nav-logo{
-            font-size: 38px;
         }
          nav ul{
             margin-top: 16px;
         }
         nav ul li a{
             font-size: 18px;
+        }
+        /* hero section */
+        .hero-section-parent{
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            margin:0px;
+        
+        }
+         .hero-left{
+            padding: 80px 0;
+            text-align: center;
+
+        }
+        .hero-greeting{
+            font-size: 40px;
+        }
+        .hero-tittle{
+            font-size: 65px;
+        }
+        .hero-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .hero-right img{
+            width: 100%;
         }
     }
