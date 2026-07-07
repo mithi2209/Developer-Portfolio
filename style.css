@@ -301,6 +301,52 @@
     .works-6{
         grid-area: six;
     }
+
+/* Footer Section Styles */
+    footer{
+        background: #fff8f3;
+        margin-top: 113px;
+    }
+      .footer-contents-container{
+        display: flex;
+        justify-content: center;
+        padding: 100px 0;
+        gap: 116px;
+    }
+       .footer-content-title{
+        color: #181818;
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .footer-content-text{
+        color: #757575;
+        width: 562px;
+        line-height: 28px;
+    }
+    .footer-social-links{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        gap: 24px;
+    }
+    .footer-contents-container form input[type="text"],
+    .footer-contents-container form input[type="email"],
+    .footer-contents-container form textarea
+    {
+        color: #757575;
+        width: 461px;
+        padding: 20px 30px;
+        margin-bottom: 24px;
+        font-size: 16px;
+        background: #ffffff;
+        border: none;
+    }
+     .copyright-text {
+        color: #757575;
+        text-align: center;
+        font-weight: 500;
+    }
 /* Reponsive Styles for Small Screens */
     @media screen and (max-width:576px){
         /* shared styles */
@@ -382,7 +428,7 @@
         }
         /* What I DO Section  */
         .do-section-container{
-            margin: 70px auto;
+            margin: 70px 30px;
         }
         
         .do-section-des{
@@ -448,6 +494,39 @@
             "five "
             "six ";
          
+        }
+        /* Footer Section Styles */ 
+
+        .footer-content-text{
+            margin-top: 70px;
+        }
+        .footer-contents-container{
+            padding: 40px;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .footer-content-title{
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        .footer-content-text{
+            margin-top: 20px;
+            width: 100%;
+        }
+        .footer-social-links{
+            margin-top: 20px;
+        }
+
+       
+        .footer-contents-container form input[type="text"],
+        .footer-contents-container form input[type="email"],
+        .footer-contents-container form textarea{
+            width: 100%;
+        }
+        .copyright-text{
+            font-size: 14px;
+            font-weight: 500;
+
         }
     }
 /* Responsive Styles For Medium Screens */
@@ -541,5 +620,24 @@
             "three four " 
             "five six ";
          
+        }
+        /* Footer Section Styles */
+        footer{
+            margin-top: 80px;
+        }
+        .footer-contents-container{
+            flex-direction: column;
+            padding: 80px;
+            gap: 80px;
+        }
+        
+        .footer-content-text {
+            width: 430px;
+        }
+
+        .footer-contents-container form input[type="text"],
+        .footer-contents-container form input[type="email"],
+        .footer-contents-container form textarea {
+            width: 100%;
         }
     }
