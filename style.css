@@ -256,7 +256,51 @@
         margin-top: 50px;
         text-align: center;
     }
+/* Gallery Section Styles  */
+    .amazing-works-container{
+        margin: 130px auto;
+    }
+    .gallery-tittle{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .amazing-works-card-container{
+        gap: 30px;
+        margin-top: 70px;
+        display: grid;
+        grid-auto-rows: 364px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "one two three"
+        "four two six"
+        "four five six"
+        ;
+    }
+    .amazing-works-card-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .works-1{
+        grid-area: one;
+    }
+    .works-2{
+        grid-area: two;
 
+    }
+    .works-3{
+        grid-area: three;
+    }
+    .works-4{
+        grid-area: four;
+    }
+    .works-5{
+        grid-area: five;
+    }
+    .works-6{
+        grid-area: six;
+    }
 /* Reponsive Styles for Small Screens */
     @media screen and (max-width:576px){
         /* shared styles */
@@ -352,7 +396,8 @@
 
         /* Summary Resume Styles */
 
-        .resume-tittle{
+        .resume-tittle ,
+        .gallery-tittle{
             font-size: 30px;
         }
         .qualification-container{
@@ -385,6 +430,24 @@
         }
         .download-btn{
             margin-top: 20px;
+        }
+        /* Gallery Section Styles  */
+         .amazing-works-container{
+            margin: 70px auto;
+        }
+        
+        .amazing-works-card-container{
+            margin: 50px  30px;
+            gap: 20px;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-areas:         
+            "one " 
+            "two "        
+            "three"
+            "four  "
+            "five "
+            "six ";
+         
         }
     }
 /* Responsive Styles For Medium Screens */
@@ -464,5 +527,19 @@
         }
         .download-btn{
             margin-top: 30px;
+        }
+        /* Gallery Section Styles  */
+        .amazing-works-container{
+            margin: 80px auto;
+        }
+          .amazing-works-card-container{
+            margin: 70px 30px;
+            gap: 20px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas:         
+            "one  two" 
+            "three four " 
+            "five six ";
+         
         }
     }
