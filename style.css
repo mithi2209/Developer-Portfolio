@@ -206,6 +206,57 @@
         margin-top: 23px;
     }
 
+/* Summary Resume Styles */
+    .resume-tittle{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .qualification-container{
+        display: flex;
+        gap: 70px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .qualification-container hr{
+        margin: 20px auto;
+        width: 650px;
+    }
+    .resume-info-heading{
+        color: #474747;
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 120px;
+    }
+
+    .info-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-tittle{
+        color: #474747;
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 35px;
+    }
+    .info-address{
+        color: #757575;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+    .info-des{
+        color: #757575;
+        font-size: 16px;
+        line-height: 1.75;
+        max-width: 450px;
+        margin: 20px 0;
+    }
+    .download-btn{
+        margin-top: 50px;
+        text-align: center;
+    }
+
 /* Reponsive Styles for Small Screens */
     @media screen and (max-width:576px){
         /* shared styles */
@@ -299,7 +350,42 @@
             flex-direction: column;
         }
 
-        
+        /* Summary Resume Styles */
+
+        .resume-tittle{
+            font-size: 30px;
+        }
+        .qualification-container{
+            gap: 30px;
+            flex-direction: column;
+            margin: 50px 40px 0px 40px;
+        }
+
+        .resume-info-heading{
+            font-size: 28px;
+            margin-top: 0;
+        }
+        .info-box{
+            justify-content: center;
+        }
+        .info-tittle{
+            font-size: 22px;
+        }
+        .info-address{
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .info-des{
+            font-size: 14px;
+            margin: 16px auto;
+        }
+        .qualification-container hr {
+            margin: 10px auto;
+            width: 100%;
+        }
+        .download-btn{
+            margin-top: 20px;
+        }
     }
 /* Responsive Styles For Medium Screens */
     @media screen and (min-width:576px) and (max-width:992px) {
@@ -359,4 +445,24 @@
             gap: 50px;
         }
         /* What I DO Section  */
+
+        .do-section-container{
+            margin: 70px 50px;
+        }
+        
+         .card-container{
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        /* Summary Resume Styles */
+        .qualification-container{
+            flex-direction: column;
+            margin: 80px auto 0 auto;
+        }
+        .resume-info-heading{
+            margin-top: 0px;
+        }
+        .download-btn{
+            margin-top: 30px;
+        }
     }
